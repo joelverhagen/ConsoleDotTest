@@ -50,6 +50,8 @@ namespace ConsoleDotTest
                 Console.WriteLine();
                 Console.WriteLine("Options:");
                 optionSet.WriteOptionDescriptions(Console.Out);
+
+                return 0;
             }
 
             string input = String.Empty;
