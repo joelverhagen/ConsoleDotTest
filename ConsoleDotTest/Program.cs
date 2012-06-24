@@ -76,10 +76,10 @@ namespace ConsoleDotTest
             if (stdout)
             {
                 // output the message to STDOUT
-                Console.Error.WriteLine("OUT: This is the first line of a normal message.");
-                Console.Error.WriteLine("  OUT: This is the second line. Here comes an empty line.");
-                Console.Error.WriteLine();
-                Console.Error.WriteLine("  OUT: The message is now done.");
+                Console.WriteLine("OUT: This is the first line of a normal message.");
+                Console.WriteLine("  OUT: This is the second line. Here comes an empty line.");
+                Console.WriteLine();
+                Console.WriteLine("  OUT: The message is now done.");
             }
 
             if (wait)
