@@ -26,7 +26,7 @@ namespace ConsoleDotTest
                 { "i|stdin", "reads in " + LINES_READ + " lines from STDIN, which will be echoed back on STDOUT before termination", v => stdin = true },
                 { "e|stderr", "output a message to STDERR", v => stderr = true },
                 { "o|stdout", "output a message to STDOUT", v => stdout = true },
-                { "w|wait", "wait " + SLEEP_TIME + " seconds before terminating", v => wait = true },
+                { "w|wait", "wait " + SLEEP_TIME + " seconds before printing a message to STDOUT and continuing", v => wait = true },
                 { "f|fail", "terminate with a non-zero exit code", v => fail = true },
             };
 
@@ -86,6 +86,8 @@ namespace ConsoleDotTest
             {
                 // sleep for the specified time
                 Thread.Sleep(SLEEP_TIME * 1000);
+
+                Console.WriteLine("The wait time is over.");
             }
 
             // ouput the user input back, if it exists
